@@ -8,6 +8,7 @@
     "test": "__tests__"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "test": "jest"
   },
   "repository": {
@@ -35,7 +36,9 @@
     "url": "https://github.com/LRRCommunity/gloomparser/issues"
   },
   "homepage": "https://github.com/LRRCommunity/gloomparser#readme",
-  "dependencies": {},
+  "dependencies": {
+    "npm-force-resolutions": "0.0.3"
+  },
   "devDependencies": {
     "bufferutil": "^4.0.1",
     "canvas": "^2.5.0",
@@ -44,5 +47,9 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "resolutions": {
+    "acorn": ">=7.1.1",
+    "minimist": ">=1.2.2"
   }
 }
